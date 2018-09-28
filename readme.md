@@ -1,3 +1,18 @@
+## Cherry
+Site about Cherry company.
+# Information about installation
+- cd domains
+- git clone https://github.com/AbigailW999/cherry.git
+- cd cherry
+- composer self-update
+- composer install
+- you can start site
+## About author
+(Email)[abigailw999@gmail.com]
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

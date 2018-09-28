@@ -8,7 +8,7 @@ Site about Cherry company.
 - composer install
 - you can start site
 ## About author
-(Email)[abigailw999@gmail.com]
+[Email](abigailw999@gmail.com)
 
 
 

@@ -41,11 +41,11 @@
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Styles</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#"></a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Forum</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About us</a></li>
                 </ul>
             </div>
             <div class="breadcrumbs"><a href="#">Home</a> / <a href="#">Another Page</a> / This page</div>
@@ -63,24 +63,24 @@
                             <option>3</option>
                         </select>
                         <div class="row">
-                            <h4>Radio</h4>
+                            <h4>What kind of delivery do you need?</h4>
                             <input type="radio">
-                            <label>Lorem ipsum dolor sit amet</label>
+                            <label>Airlines delivery</label>
                             <div class="clear"></div>
                             <input type="radio">
-                            <label>Duis aute irure dolor</label>
+                            <label>Railroads delivery</label>
                             <div class="clear"></div>
                             <input type="radio">
-                            <label>Excepteur sint occaecat</label>
+                            <label>Sea delivery</label>
                             <div class="clear"></div>
                         </div>
                         <div class="row">
-                            <h4>Checkbox</h4>
+                            <h4>What kind of notifications you want to receive?</h4>
                             <input type="checkbox" />
-                            <label>Duis aute irure dolor</label>
+                            <label>Our new options</label>
                             <div class="clear"></div>
                             <input type="checkbox" />
-                            <label>Excepteur sint occaecat</label>
+                            <label>Our sales</label>
                             <div class="clear"></div>
                         </div>
                         <button type="submit" class="minWidth">Send</button>

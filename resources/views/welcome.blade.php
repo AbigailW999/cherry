@@ -19,6 +19,7 @@
                     <div class="left"><h1><a href="#">Cherry</a></h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></div>
                     <div class="right">
                         <a href="#" id="sign">Sign in/Sign out</a>
+                        <a href="#" id="sign">Registration</a>
                         <form class="search">
                             <input type="text" placeholder="Search...">
                             <input type="image" src="{{asset('/media/img/search.png')}}" title="Search">

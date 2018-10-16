@@ -5,6 +5,7 @@
         <title>Cherry</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
+        @section('styles')
         <link rel="stylesheet" type="text/css" href="{{asset('/media/css/style.css')}}" media="all">
         <style>
             #sign{
@@ -15,6 +16,7 @@
                 color: blue;
             }
         </style>
+        @show
     </head>
     <body>
         <div class="wrapper">
@@ -46,11 +48,11 @@
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="{{asset('products')}}">Products</a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Forum</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="{{asset('about')}}">About us</a></li>
                     <li>
                                                 @guest
                             <li class="nav-item">

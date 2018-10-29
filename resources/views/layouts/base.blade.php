@@ -48,7 +48,7 @@
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="{{asset('products')}}">Products</a></li>
+                    <li><a href="{{asset('categories')}}">Products</a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Forum</a></li>

@@ -17,4 +17,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'BaseController@getIndex');
 
+Route::get('categories', 'TovarController@getAll');
+
 Route::get('/{url}', 'PageController@getIndex');

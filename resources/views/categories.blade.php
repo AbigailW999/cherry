@@ -16,6 +16,10 @@
 		                	@endif
 
 	                	{!!$one->body!!}
+                        <!-- ссылка на Добавить в корзину -->
+                        <a href="{{asset('basket/add/'.$one->id)}}" class="add_cart" data-id="{{$one->id}}" style="text-decoration:none; display:block; text-align:right; font-weight:bold; font-size:16px;">
+                            Добавить в корзину
+                        </a>
 	                	@endforeach
                 	@endforeach
                 <div class="card-body">

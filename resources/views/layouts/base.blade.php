@@ -88,6 +88,7 @@
 
             <div class="breadcrumbs"><a href="#">Home</a> / <a href="#">Another Page</a> / This page</div>
             <div class="main">
+                <a href="{{asset('basket')}}" style="text-align:right; font-weight:bold; font-size:17px; text-decoration:none; display:inline-block; margin-left:600px;">BASCKET</a>
                 <div class="leftCol">
                     <form>
                         <h2>Contact us</h2>

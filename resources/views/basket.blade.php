@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">My order</div>
-                    <form>
+                    <form method="post" >
                         <table>
                             <tr>
                                 <td>Picture</td>
@@ -14,7 +14,7 @@
                                 <td>Price</td>
                                 <td>Amount</td>
                                 <td>Sum</td>
-                                <td>Condition</td>
+                                <td>Act</td>
                             </tr>
                             @foreach($arr as $key=>$value)
                             @php
@@ -26,11 +26,11 @@
                             <img src="{{asset('uploads/thumb/'.$products[$key]->picture)}}" />
                             @endif
                                 </span></td>
-                                <td><span id="name_{{$key}}">{{$products[$key]->name}}</span></td>
-                                <td><span id="price_{{$key}}">{{$products[$key]->price}}</span></td>
-                                <td><span id="value_{{$key}}">{{$value}}</span></td>
-                                <td><span id="summa_{{$key}}">{{$sum}}</span></td>
-                                <td><span id=""><a href="{{asset('basket/delete/'.$key)}}">&times;</a></span></td>
+                                <td><span name="name" id="name_{{$key}}">{{$products[$key]->name}}</span></td>
+                                <td><span name="price" id="price_{{$key}}">{{$products[$key]->price}}</span></td>
+                                <td><span name="{{$key}}" id="value_{{$key}}">{{$value}}</span></td>
+                                <td><span name="summa" id="summa_{{$key}}">{{$sum}}</span></td>
+                                <td><span name="act" id=""><a href="{{asset('basket/delete/'.$key)}}">&times;</a></span></td>
                             </tr>
     <!--                        <tr>
                                 <td colspan="3">Total</td>

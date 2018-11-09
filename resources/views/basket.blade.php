@@ -7,6 +7,9 @@
             <div class="card">
                 <div class="card-header">My order</div>
                     <form method="post" action="{{asset('order')}}">
+
+                    
+
                     {!!csrf_field()!!}<!-- добавляет еще один элемент к форме - token, тк Laravel защищает формы -->
                         <table>
                             <tr>
@@ -42,7 +45,12 @@
                             </tr> -->
                             @endforeach
                         </table>
-                    <p>Username</p><input type="text" name="username">
+                    <p>Username</p><input type="text" name="username" value="{{ (old('username') == true) ? old('username') : ''}}">
+                    @if ($errors->has('username'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('username') }}</strong>
+                        </span>
+                    @endif
                     <p>Email</p><input type="email" name="email">
                     <p>Phone</p><input type="tel" name="phone"></br>
                     <button type="submit">Confirm order</button>

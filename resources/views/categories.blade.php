@@ -6,6 +6,15 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Categories</div>
+
+                <p style="text-align:right;">Filter</br>
+                        <select name="filter">
+                            <option value="land">land transportation</option>
+                            <option value="air">air transportation</option>
+                            <option value="sea">sea transportation</option>
+                        </select>
+                    </p>
+
                 	@foreach($cats as $cat)
                 	<h2 class="title">{{$cat->name}}</h2>
 	                	@foreach($cat->products()->get() as $one)

@@ -29,6 +29,15 @@ class OrderController extends Controller
     	$r['payment']='payment';
     	$r['delivery']='delivery';
     	order::create($r->all());
+
+        //очистка корзины после оформления заказа
+        foreach ($_COOKIE as $key => $value) {
+            $id=(int)$key;
+            if($id>0){
+                setcookie($id,'',time()-1,'/');
+            }
+        }
+
     	return redirect()->back();
 
     	//dd($body);

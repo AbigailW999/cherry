@@ -712,3 +712,17 @@ ul.clock li {
 	float: left;
 	margin-right: 5px;
 }
+
+/* styles for More */
+.modal-window{
+	position: fixed;
+	top:150px;
+	left:50%;
+	width: 400px;
+	margin-left: -200px;
+	padding: 10px;
+	border:solid 10px #ccc;
+	background-color: #fff;
+	z-index: 99;
+	border-radius: 5px;
+}

@@ -1,5 +1,10 @@
 @extends('layouts.base')
 
+@section('script') <!-- подключаем modal.js, добавляя к скрипту в base.blade.php -->
+@parent
+<script src="{{asset('public/js/modal.js')}}" type="text/javascript"></script>
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -25,6 +30,8 @@
 		                	@endif
 
 	                	{!!$one->body!!}
+                        <!-- Link - product more -->
+                        <a href="#" data-id="{{$one->id}}" class="prod_more"  style="text-decoration:none; display:block; text-align:right; font-weight:bold; font-size:16px; color:grey;">More</a><br>
                         <!-- ссылка на Добавить в корзину -->
                         <a href="{{asset('basket/add/'.$one->id)}}" class="add_cart" data-id="{{$one->id}}" style="text-decoration:none; display:block; text-align:right; font-weight:bold; font-size:16px;">
                             Добавить в корзину

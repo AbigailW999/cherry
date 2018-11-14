@@ -6,17 +6,18 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         @section('styles')
-        <link rel="stylesheet" type="text/css" href="{{asset('/media/css/style.css')}}" media="all">
-        <style>
-            #sign{
-            margin-right:10px;          
-            }
-            a #lii{
-                margin-left: 20px;
-                color: blue;
-            }
-        </style>
+	        <link rel="stylesheet" type="text/css" href="{{asset('/media/css/style.css')}}" media="all">
+	        <style>
+	            #sign{
+	            margin-right:10px;          
+	            }
+	            a #lii{
+	                margin-left: 20px;
+	                color: blue;
+	            }
+	        </style>
         @show
+        <script src="{{asset('/public/js/jquery-3.3.1.min.js')}}" type="text/javascript"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -35,23 +36,26 @@
             </div>
             <div class="slider">
                 <div class="itemSlider">
-                    <div class="bgSlide"><img src="{{asset('/media/img/bg-slide.jpg')}}"></div>
+                    <div class="bgSlide"><img id="picture" src="{{asset('/media/img/bg-slide.jpg')}}"></div><!-- Link picture , my default pic - cherry pic -->
                     <div class="descSlide">
                         <h1>Eaten berry</h1>
-                        <p>and go for a walk</p>
-                        <span>Duis aute irure dolor...</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+	                        <p>and go for a walk</p>
+	                        <span id="name">Duis aute irure dolor...</span> <!-- Link name -->
+	                    <div id="body"> <!-- Link body -->
+	                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="nav">
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="{{asset('categories')}}">Products</a></li>
+                    <li><a href="#" data-name="news" data-body="Abot interesting news" data-picture="news.png">News</a></li>
+                    <li><a href="{{asset('categories')}}" data-name="products" data-body="About interesting products" data-picture="products.jpg">Products</a></li>
                     <li><a href="#"></a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Forum</a></li>
+                    <li><a href="#" data-name="blog" data-body="About interesting company events" data-picture="blog.jpg">Blog</a></li>
+                    <li><a href="#" data-name="forum" data-body="About interestin thoughts" data-picture="forum.jpg">Forum</a></li>
                     <li><a href="{{asset('about')}}">About us</a></li>
                     <li>
                                                 @guest
@@ -178,4 +182,7 @@
             </div>
         </div>
     </body>
+            <script src="{{asset('/public/js/main.js')}}" type="text/javascript"></script>
+        @section('script')
+        @show
 </html>

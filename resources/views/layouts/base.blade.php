@@ -26,8 +26,9 @@
                     <div class="left"><h1><a href="#">Cherry</a></h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                     </div>
                     <div class="right">
-                        <form class="search">
-                            <input type="text" placeholder="Search...">
+                        <form class="search"  method="get" action="{{asset('search')}}">
+                            {{ csrf_field() }}<!-- Laravel form protection -->
+                            <input type="text" name="search" placeholder="Search...">
                             <input type="image" src="{{asset('/media/img/search.png')}}" title="Search">
                         </form>
                        

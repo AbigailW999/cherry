@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            
                 <div class="card-header">Categories</div>
 
                 <p style="text-align:right;">Filter</br>
@@ -20,7 +20,9 @@
                         </select>
                     </p>
 
-                	@foreach($cats as $cat)
+                    <div class="card">
+                	
+                    @foreach($cats as $cat)
                 	<h2 class="title">{{$cat->name}}</h2>
 	                	@foreach($cat->products()->get() as $one)
 	                	<h4>{{$one->name}}</h4>

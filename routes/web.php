@@ -27,6 +27,8 @@ Route::get('basket/delete/{id}', 'BasketController@getDelete');
 
 Route::post('order', 'OrderController@postIndex');// link in basket.blade.php <form method="post" action="{{asset('order')}}">
 
+Route::get('search', 'SearchController@getIndex');
+
 Route::post('/ajax', 'AjaxController@postIndex');
 
 Route::get('/{url}', 'PageController@getIndex');

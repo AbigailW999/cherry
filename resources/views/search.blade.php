@@ -9,7 +9,7 @@
 
                 <div class="card-body">
 					@foreach($products as $one)
-					<h2><a href="{{asset('product/'.$one->id)}}">{{$one->name}}</a></h2>
+					<h2><a href="{{asset('product/'.$one->id)}}">{{$one->name}}</a></h2><!--product как в url в web.php -->
 					@endforeach
 
 					@foreach($products_more as $one)

@@ -93,13 +93,13 @@
 
             <div class="breadcrumbs"><a href="#">Home</a> / <a href="#">Another Page</a> / This page</div>
             <div class="main">
-                <a href="{{asset('basket')}}" style="text-align:right; font-weight:bold; font-size:17px; text-decoration:none; display:inline-block; margin-left:600px;">BASCKET</a>
+                <a href="{{asset('basket')}}" style="text-align:right; font-weight:bold; font-size:17px; text-decoration:none; display:inline-block; margin-left:600px;">BASCKET ({{$counts}})</a>
                 <div class="leftCol">
                     <form>
                         <h2>Contact us</h2>
-                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="{{(asset($user)) ? $user->name : 'First Name'}}">
                         <input type="text" placeholder="Last Name">
-                        <input type="text" disabled="disabled" placeholder="Addres">
+                        <input type="email" placeholder="{{(asset($user)) ? $user->email : 'Email'}}">
                         <input type="text" placeholder="Phone number">
                         <select>
                             <option>1</option>

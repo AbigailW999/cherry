@@ -1,8 +1,9 @@
 @extends('layouts.base')
 
-@section('script') <!-- подключаем modal.js, добавляя к скрипту в base.blade.php -->
+@section('script') <!-- подключаем modal.js,filter.js добавляя к скрипту в base.blade.php -->
 @parent
 <script src="{{asset('public/js/modal.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/js/filter.js')}}" type="text/javascript"></script>
 @endsection
 
 @section('content')
@@ -13,10 +14,11 @@
                 <div class="card-header">Categories</div>
 
                 <p style="text-align:right;">Filter</br>
-                        <select name="filter">
-                            <option value="land">land transportation</option>
-                            <option value="air">air transportation</option>
-                            <option value="sea">sea transportation</option>
+                        <select id="filter" name="filter">
+                            <option name="all" value="0">all transportations</option>
+                            <option name="land" value="1">land transportation</option>
+                            <option name="air" value="2">air transportation</option>
+                            <option name="sea" value="3">sea transportation</option>
                         </select>
                     </p>
 

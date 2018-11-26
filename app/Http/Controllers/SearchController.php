@@ -11,9 +11,8 @@ class SearchController extends Controller
 	    $search = $_GET['search'];
 	    $products = Tovar::where('name', 'LIKE', "%$search%")->get();
 	    $products_more = Tovar::where('body', 'LIKE', "%$search%")->get();
-	    $maintexts = Maintext::where('name', 'LIKE', "%$search%")->get();
-	    $maintexts_more = Maintext::where('body', 'LIKE', "%$search%")->get();
-	   // $arr_products = array_push($)
+	 //   $maintexts = Maintext::where('name', 'LIKE', "%$search%")->get();
+	//    $maintexts_more = Maintext::where('body', 'LIKE', "%$search%")->get();
 	    return view('search', compact('products', 'products_more'));
 	}
 }

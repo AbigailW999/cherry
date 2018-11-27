@@ -54,7 +54,10 @@
                     <p>Email</p><input type="email" name="email">
                     <p>Phone</p><input type="tel" name="phone"></br>
                     <button type="submit">Confirm order</button>
+
+                    <button type="submit" name="submit" id=""><a href="">Clear basket</a></button><!-- ?? -->                 
                     </form>
+
 
                     
                 <div class="card-body">

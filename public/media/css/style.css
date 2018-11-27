@@ -737,3 +737,110 @@ ul.clock li {
 	background-color: black;
 	opacity: 0.7;
 }
+
+
+
+
+
+.lang{
+	position: absolute;
+	top:30px;
+	left:1280px;
+}
+ul.menu1 {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+ul.menu2 {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+ul.menu1:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.menu2:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.menu1 > li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+}
+ul.menu1 > li > a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    color: #fff;
+    /* Задаю отступ 10px. */
+    padding: 10px;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю цвет. */
+    background-color: grey;
+}
+ul.menu1 > li > a:hover {
+    /* Задаю цвет при наведении. */
+    background-color: black;
+}
+ul.menu2 {
+    position: absolute;
+    width: 240px;
+    top: 37px;
+    left:0px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: white;
+}
+ul.menu2 > li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.menu2 > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color: #ffffff;
+    /* Еще цвет. */
+    background-color: grey;
+}
+ul.menu2 > li > a:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color: black;
+    /* Задаю подчеркивание*/
+    text-decoration: underline;
+}
+ul.menu1 > li:hover > ul.menu2 {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+
+
+

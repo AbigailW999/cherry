@@ -25,6 +25,7 @@
                 <div class="headerContent">
                     <div class="left"><h1><a href="#">Cherry</a></h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                     </div>
+
                     <div class="right">
                         <form class="search"  method="get" action="{{asset('search')}}">
                             {{ csrf_field() }}<!-- Laravel form protection -->
@@ -140,6 +141,18 @@
                     @yield("content")
                 </div>
             </div>
+
+                    <div class="lang">
+                        <ul class="menu1">
+                            <li><a href="">Language</a>
+                                <ul class="menu2">
+                                    <li><a href="">English</a></li>
+                                    <li><a href="">Russian</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
             <div class="footer">
                 <div class="footerContent">
                     <div class="span1">

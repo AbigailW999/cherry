@@ -31,4 +31,8 @@ class BasketController extends Controller
     	setcookie($id,'',time()-1,'/');
     	return redirect()->back();
     }
+
+    public function getClearAll(){
+        //?
+    }
 }

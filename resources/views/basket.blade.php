@@ -55,10 +55,10 @@
                     <p>Phone</p><input type="tel" name="phone"></br>
                     <button type="submit">Confirm order</button>
 
-                    <button type="submit" name="submit" id=""><a href="">Clear basket</a></button><!-- ?? -->                 
+
                     </form>
 
-
+                    <a href="{{asset('basket/delete/all')}}">Clear basket</a>  
                     
                 <div class="card-body">
                 </div>

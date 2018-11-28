@@ -17,6 +17,7 @@ class SiteProvider extends ServiceProvider
     {
         View::composer('layouts.base', 'App\Providers\ViewComposers\SiteComposer');//form
         View::composer('layouts.base', 'App\Providers\ViewComposers\CookieComposer');//order count
+        View::composer('layouts.base', 'App\Providers\ViewComposers\LangComposer');
     }
 
     /**

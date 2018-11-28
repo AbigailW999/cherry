@@ -52,13 +52,13 @@
             </div>
             <div class="nav">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" data-name="news" data-body="Abot interesting news" data-picture="news.png">News</a></li>
-                    <li><a href="{{asset('categories')}}" data-name="products" data-body="About interesting products" data-picture="products.jpg">Products</a></li>
+                    <li><a href="#">{{__('pagination.home')}}</a></li>
+                    <li><a href="#" data-name="news" data-body="Abot interesting news" data-picture="news.png">{{__('pagination.news')}}</a></li>
+                    <li><a href="{{asset('categories')}}" data-name="products" data-body="About interesting products" data-picture="products.jpg">{{__('pagination.products')}}</a></li>
                     <li><a href="#"></a></li>
-                    <li><a href="#" data-name="blog" data-body="About interesting company events" data-picture="blog.jpg">Blog</a></li>
-                    <li><a href="#" data-name="forum" data-body="About interestin thoughts" data-picture="forum.jpg">Forum</a></li>
-                    <li><a href="{{asset('about')}}">About us</a></li>
+                    <li><a href="#" data-name="blog" data-body="About interesting company events" data-picture="blog.jpg">{{__('pagination.blog')}}</a></li>
+                    <li><a href="#" data-name="forum" data-body="About interestin thoughts" data-picture="forum.jpg">{{__('pagination.forum')}}</a></li>
+                    <li><a href="{{asset('about')}}">{{__('pagination.about_us')}}</a></li>
                     <li>
                                                 @guest
                             <li class="nav-item">
@@ -144,15 +144,15 @@
 
                     <div class="lang">
                         <ul class="menu1">
-                            <li><a href="">Language</a>
+                            <li><a href="">{{$lang}}</a>
                                 <ul class="menu2">
-                                    <li><a href="">English</a></li>
-                                    <li><a href="">Russian</a></li>
+                                    <li><a href="/?lang=en">English</a></li>
+                                    <li><a href="/?lang=ru">Russian</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
-
+                    <a href="#"></a><!-- из LangComposer.php через SiteProvider.php-->
             <div class="footer">
                 <div class="footerContent">
                     <div class="span1">

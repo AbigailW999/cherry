@@ -33,6 +33,12 @@ class BasketController extends Controller
     }
 
     public function getClearAll(){
-        //?
+        foreach ($_COOKIE as $key => $value) {
+            $id=(int)$key;//переводим все id в числа, если нето то 0
+            if($id>0){
+               setcookie($id,'',time()-1,'/');
+            }
+        }
+        return redirect()->back();
     }
 }

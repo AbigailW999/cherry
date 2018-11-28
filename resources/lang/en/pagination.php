@@ -13,7 +13,11 @@ return [
     |
     */
 
-    'previous' => '« Previous',
-    'next' => 'Next »',
+    'home'=>'Home',
+    'news'=>'News',
+    'products'=>'Products',
+    'blog'=>'Blog',
+    'forum'=>'Forum',
+    'about_us'=>'About us'
 
 ];

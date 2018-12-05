@@ -92,7 +92,7 @@
                 </ul>
             </div>
 
-            <div class="breadcrumbs"><a href="#">Home</a> / <a href="#">Another Page</a> / This page</div>
+            <div class="breadcrumbs"><a href="/">Home</a> / <a href="{{(asset($world))}}">{{ $world }}</a> / <a href="{{(asset($world2))}}">{{ $world2 }}</a></div>
             <div class="main">
                 <a href="{{asset('basket')}}" style="text-align:right; font-weight:bold; font-size:17px; text-decoration:none; display:inline-block; margin-left:600px;">BASCKET ({{$counts}})</a>
                 <div class="leftCol">
@@ -144,7 +144,7 @@
 
                     <div class="lang">
                         <ul class="menu1">
-                            <li><a href="">{{$lang}}</a>
+                            <li><a href="">{{$lang}}</a><!-- из LangComposer.php через SiteProvider.php-->
                                 <ul class="menu2">
                                     <li><a href="/?lang=en">English</a></li>
                                     <li><a href="/?lang=ru">Russian</a></li>
@@ -152,7 +152,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#"></a><!-- из LangComposer.php через SiteProvider.php-->
+                    
             <div class="footer">
                 <div class="footerContent">
                     <div class="span1">

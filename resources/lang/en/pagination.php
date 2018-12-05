@@ -18,6 +18,7 @@ return [
     'products'=>'Products',
     'blog'=>'Blog',
     'forum'=>'Forum',
-    'about_us'=>'About us'
+    'about_us'=>'About us',
+    'bascket'=>'Buscket'
 
 ];

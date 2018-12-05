@@ -18,5 +18,6 @@ return [
     'products'=>'Продукты',
     'blog'=>'Блог',
     'forum'=>'Форум',
-    'about_us'=>'О нас'
+    'about_us'=>'О нас',
+    'bascket'=>'Корзина'
 ];

@@ -27,7 +27,7 @@
                     @foreach($cats as $cat)
                 	<h2 class="title">{{$cat->name}}</h2>
 	                	@foreach($cat->products()->get() as $one)
-	                	<h4>{{$one->name}}</h4>
+	                	<h4><a href="{{asset('product/'.$one->id)}}">{{$one->name}}</a></h4><!-- добавляем ссылку на индивид страницу для каждого продукта -->
 	                		<!-- подключаем картинки -->
 		                	@if($one->picture !='')
 		                	<img src="{{asset('uploads/thumb/'.$one->picture)}}" />

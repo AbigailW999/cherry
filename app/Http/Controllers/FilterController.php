@@ -16,4 +16,5 @@ class FilterController extends Controller
     	}
     	return view('includes.filter', compact('products'));
     }
+
 }

@@ -6,8 +6,7 @@ use Closure;
 use App;
 use Auth;
 
-
-class AdminMiddleware
+class UserMiddleware
 {
     /**
      * Handle an incoming request.
@@ -18,11 +17,6 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-
-        if(Auth::user()->role_id != 1){ 
-           return redirect('/');
-        } 
-
         return $next($request);
     }
 }

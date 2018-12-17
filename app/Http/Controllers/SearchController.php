@@ -15,4 +15,5 @@ class SearchController extends Controller
 	//    $maintexts_more = Maintext::where('body', 'LIKE', "%$search%")->get();
 	    return view('search', compact('products', 'products_more'));
 	}
+
 }

@@ -39,4 +39,17 @@ Route::group(['middleware' => ['lang']], function(){
 	Route::get('basket', 'BasketController@getAll');
 });// middleware Lang
 
+Route::group(['middleware' =>['no_user']], function(){ //ограничения для гостей 
+	Route::post('order', 'OrderController@postIndex');
+	Route::get('search', 'SearchController@getIndex');
+});
+
+Route::group(['middleware' =>['user']], function(){ //ограничения для пользователей
+    
+});
+
+Route::group(['middleware' =>['admin']], function(){ //ограничения для админа
+    
+});
+
 Route::get('/{url}', 'PageController@getIndex');

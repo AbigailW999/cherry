@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class RolesController extends Controller
 {
+    
+        public function __construct()
+        {
+            $this->middleware('admin'); //применение Laravel middleware для всем методов контроллера
+        }
+
     /**
      * @var Role
      */
@@ -93,5 +99,7 @@ class RolesController extends Controller
 
         return redirect()->route('roles.index')->withMessage(trans('quickadmin::admin.roles-controller-successfully_deleted'));
     }
+
+
 }
 

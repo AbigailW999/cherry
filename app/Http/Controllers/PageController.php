@@ -11,4 +11,5 @@ class PageController extends Controller
     	$obj=Maintext::where('url',$url)->first();
     	return view('page', compact('obj'));
     }
+
 }

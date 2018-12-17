@@ -16,5 +16,4 @@ class TovarController extends Controller
     	$obj = Tovar::find($id);
     	return view('tovar', compact('obj'));
     }
-
 }

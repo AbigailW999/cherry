@@ -41,4 +41,5 @@ class BasketController extends Controller
         }
         return redirect()->back();
     }
+
 }

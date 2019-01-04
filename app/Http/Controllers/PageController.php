@@ -9,7 +9,12 @@ class PageController extends Controller
     public function getIndex($url = null){
 
     	$obj=Maintext::where('url',$url)->first();
-    	return view('page', compact('obj'));
+    	if(isset($_GET['print'])){
+    		$temp = 'print';
+    	} else {
+    		$temp = 'base';
+    	}
+    	return view('page', compact('obj','temp'));
     }
 
 }
